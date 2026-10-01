@@ -1,2 +1,1 @@
-console.log("Hola,  món!");
-console.log("El meu nom és Joan Gomila Sureda");
+console.log("Hola, món!");
