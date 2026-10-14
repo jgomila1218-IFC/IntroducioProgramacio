@@ -1,11 +1,13 @@
 let variableA = "A"; 
 let variableB = "B"; 
 let variableC = "C";
+console.log("Valor inicial:");
 console.log(variableA);
 console.log(variableB);
 console.log(variableC);
 variableC = "B";
 variableB = "C";
+console.log("Valor final:");
 console.log(variableA);
 console.log(variableB);
 console.log(variableC);
