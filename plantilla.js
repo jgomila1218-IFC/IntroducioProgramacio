@@ -1,0 +1,1 @@
+const prompt = requiere('prompt-sync')();
