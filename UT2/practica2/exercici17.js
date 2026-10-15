@@ -20,8 +20,5 @@ console.log("10" / 2);
 //així donant un valor numeric com a resultat.
 
 console.log("---------------------------------");
-console.log(" Resultats eliminant les cometes");
-console.log(10 + 5); //Aqui dona com a resultat elm valor numeric 15
-console.log(10 - 5); 
-console.log(10 * 2); 
-console.log(10 / 2);
+console.log(" Resultat posant number");
+console.log(Number("10" + 5) ); //Aqui dona com a resultat elm valor numeric 15
