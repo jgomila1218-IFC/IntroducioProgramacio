@@ -1,9 +1,20 @@
-let num = 25;
+let val;
+console.log("------------------------------");
 
-console.log(valor original);
-console.log(num);
-console.log(typeof num);
-num =  String(num)
+console.log("valor numeric:");
+val = 25
+console.log(val);
+console.log(typeof val);
+console.log("------------------------------");
 
-console.log(num);
-console.log(typeof num);
+console.log("Valor string:");
+val = "Hola, jo soc una variable."
+console.log(val);
+console.log(typeof val);
+console.log("------------------------------");
+
+console.log("Valor boolea:");
+val = true
+console.log(val);
+console.log(typeof val);
+console.log("------------------------------");
