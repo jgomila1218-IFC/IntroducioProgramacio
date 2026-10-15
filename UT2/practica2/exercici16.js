@@ -1,5 +1,5 @@
 let val;
-console.log("------------------------------");
+console.log("------------------------------"); //Millora la visualització de la sortida
 
 console.log("valor numeric:");
 val = 25
