@@ -6,9 +6,9 @@ switch(num) {
     case 3: 
     case 4: 
     case 5:
-    console.log('Dia feiner');
+      console.log('Dia feiner');
     break; 
     case 6: 
     case 7: 
-    console.log('Cap de setmana');
+      console.log('Cap de setmana');
 }

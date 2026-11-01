@@ -1,7 +1,5 @@
 //Un operador unari es aqeuell que sols te un operador.
-//En canvi un operador binari es aquell que te mes d'un operador
-
-
+//En canvi un operador binari es aquell que te mes d'un operador 
 console.log("operador unari:");
 let x = 1;
 x = -x;
