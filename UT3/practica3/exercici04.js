@@ -5,4 +5,4 @@ let d = b++; // assigna el valor de "b" a "d" i despres li augmenta el valor a "
 console.log(a); // valor augmentat de "a" --> 5
 console.log(b); // valor augmentat de "b" --> 5
 console.log(c); // valor augmentat de "a" asignat a "c" --> 5
-console.log(d); // vorlor de "b" sense augemntar --> 5
+console.log(d); // vorlor de "b" sense augemntar --> 4

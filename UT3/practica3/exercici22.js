@@ -11,4 +11,6 @@ switch(num) {
     case 6: 
     case 7: 
       console.log('Cap de setmana');
+    default: 
+      console.log('Dia no valid.');
 }
