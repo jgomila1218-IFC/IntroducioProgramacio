@@ -17,7 +17,7 @@ switch(num) {
       console.log('Divendres.');
     break;
     case 6: 
-      console.log('Disabte.');
+      console.log('Dissabte.');
     break;
     case 7: 
       console.log('Diumenge.');
