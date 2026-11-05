@@ -19,6 +19,12 @@ Voct3 = Number.isInteger(oct3); //Comprovació de si l'octet 3 es un nombre senc
 Voct4 = Number.isInteger(oct4); //Comprovació de si l'octet 4 es un nombre sencer
 let enter = (Voct1 == true && Voct2 == true && Voct3 == true && Voct4 == true); //validacio de si tots els octets son enters
 
+let PrivPubl = (oct1 === 10 && oct2 >= 0 && oct3 >= 0 && oct4 >= 0 && oct2 <= 255 && oct3 <= 255 && oct4 <= 255) ? true :
+(oct1 === 172 && oct2 >= 16 && oct3 >= 0 && oct4 >= 0 && oct2 <= 31 && oct3 <= 255 && oct4 <= 255) ? true :
+(oct1 === 192 && oct2 === 168 && oct3 >= 0 && oct4 >= 0 && oct3 <= 255 && oct4 <= 255) ? true :
+'false';
+
+
 console.log();
 console.log("------------------------------------------------------------------------");
 console.log();
@@ -65,8 +71,7 @@ if (Valit == true) { //Es segueix si els octets estan entre 0 i 255
           console.log('Les masqueres de tipus D i E, ames de les addresses especials no tenen una mascara per defecte');
         }
     
-              
-        (oct1 === 10 && oct2 === 0 || oct1 === 172 && oct2 === 16 || oct1 === 192 && oct2 === 168) ? console.log("Tipus d'adreca: Privada"):
+        (PrivPubl == true) ? console.log("Adressa privada"):
             console.log("Tipus d'adreca: Publica");
     } else {
         console.log('ERROR!! els nombres han de ser enters'); //Dona un error si els octets contenen valors decimals.

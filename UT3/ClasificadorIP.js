@@ -14,7 +14,10 @@ let Voct3 = (oct3 <= 255 && oct3 >= 0);
 let Voct4 = (oct4 <= 255 && oct4 >= 0); 
 let Valit = (Voct1 == true && Voct2 == true && Voct3 == true && Voct4 == true); 
 let IPsencera = (`${oct1}.${oct2}.${oct3}.${oct4}`);
-
+let PrivPubl = (oct1 === 10 && oct2 >= 0 && oct3 >= 0 && oct4 >= 0 && oct2 <= 255 && oct3 <= 255 && oct4 <= 255) ? true :
+(oct1 === 172 && oct2 >= 16 && oct3 >= 0 && oct4 >= 0 && oct2 <= 31 && oct3 <= 255 && oct4 <= 255) ? true :
+(oct1 === 192 && oct2 === 168 && oct3 >= 0 && oct4 >= 0 && oct3 <= 255 && oct4 <= 255) ? true :
+'false';
 if (Valit) {
     console.log(`Addreca IP completa: ${IPsencera}`);
    
@@ -49,8 +52,8 @@ if (Valit) {
       console.log('Les masqueres de tipus D i E, ames de les addresses especials no tenen una mascara per defecte');
     }
    
-    (oct1 === 10 || oct1 === 172 || oct1 === 192) ? console.log("Tipus d'adreca: Privada"):
-    console.log("Tipus d'adreca: Publica");
+    (PrivPubl == true) ? console.log("Adressa privada"):
+            console.log("Tipus d'adreca: Publica");
 
 } else { 
     console.log('ERROR: No es permeten valors inferiors a 0 o speriors a 255 a cada octet.') 
